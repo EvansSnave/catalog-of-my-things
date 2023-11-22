@@ -49,6 +49,7 @@ class App
 
   def quit
     save_books(@books) unless @books.empty?
+    save_labels(@labels) unless @labels.empty?
     puts 'Thank you for using this app'
     exit
   end

@@ -7,9 +7,9 @@ module LabelsData
     data.map { |label| json_to_label(label) }
   end
 
-  def save_all_labels(labels)
+  def save_labels(labels)
     data = labels.map { |label| label_to_json(label) }
-    write(create_path('labels.json'), data)
+    write_file(create_path('labels.json'), data)
   end
 
   def label_to_json(label)
