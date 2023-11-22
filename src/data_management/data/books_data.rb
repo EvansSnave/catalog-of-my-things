@@ -2,14 +2,14 @@ require_relative '../path_finder'
 
 module BooksData
   include PathFinder
-  
+
   def read_all_books(labels)
     data = read_file(create_path('books.json'))
-    data.map {|book| json_to_book(book, labels.find {|label| book['label']['id'] == label.id})}
+    data.map { |book| json_to_book(book, labels.find { |label| book['label']['id'] == label.id }) }
   end
 
   def save_books(books)
-    json = books.map {|book| book_to_json(book)}
+    json = books.map { |book| book_to_json(book) }
     write_file(create_path('books.json'), json)
   end
 

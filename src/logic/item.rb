@@ -17,7 +17,13 @@ class Item
 
   def move_to_archive
     return unless can_be_archived?
+
     @archived = true
+  end
+
+  def add_label(label)
+    @label = label
+    label.add_item(self)
   end
 
   private

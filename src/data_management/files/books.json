@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": 772,
+    "publish_date": "2001-02-12",
+    "publisher": "kevin",
+    "cover_state": "bad",
+    "label": {
+      "id": 356,
+      "title": "qw",
+      "color": "red"
+    }
+  }
+]

@@ -7,6 +7,7 @@ module PathFinder
 
   def read_file(file)
     return [] unless File.exist?(file)
+
     JSON.parse(File.read(file))
   end
 

@@ -31,4 +31,19 @@ class Interactions
     end
     cover
   end
+
+  def add_title
+    puts 'Add a title'
+    gets.chomp
+  end
+
+  def add_color
+    puts 'Add a color'
+    gets.chomp
+  end
+
+  def select_label
+    puts 'Select a label'
+    gets.chomp
+  end
 end
