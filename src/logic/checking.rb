@@ -26,4 +26,29 @@ class Check
       puts "Color: #{label.color}"
     end
   end
+
+  def check_list_albums(albums)
+    puts "\nMusic Albums list: "
+    if albums.empty?
+      puts "\nNo Music Albums in your catalog yet"
+      return nil
+    end
+    albums.each_with_index do |album, idx|
+      spotify_status = album.on_spotify ? 'yes' : 'no'
+      puts "\n #{idx}) ID: (#{album.id})" \
+           "- Publish Date: #{album.publish_date} - Genre: #{album.genre.name} " \
+           "- Is available on Spotify: #{spotify_status}"
+    end
+  end
+
+  def check_list_genres(genres)
+    puts "\nGenres List:"
+    if genres.empty?
+      puts "\nNo Genres available yet"
+      return nil
+    end
+    genres.each_with_index do |genre, idx|
+      puts "\n #{idx}) ID: (#{genre.id}) Genre: #{genre.name}"
+    end
+  end
 end
