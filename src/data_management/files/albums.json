@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": 3348,
+    "publish_date": "2001-02-12",
+    "on_spotify": {
+      "on_spotify": true
+    },
+    "genre": {
+      "id": 14,
+      "name": "rock"
+    }
+  }
+]

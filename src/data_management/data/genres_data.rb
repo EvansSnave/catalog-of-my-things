@@ -1,7 +1,7 @@
-require_relative '../file_helper'
+require_relative '../path_finder'
 
 module GenreData
-  include FileManager
+  include PathFinder
 
   def read_all_genres
     data = read_file(create_path('genres.json'))

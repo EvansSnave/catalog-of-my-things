@@ -46,4 +46,22 @@ class Interactions
     puts 'Select a label'
     gets.chomp
   end
+
+  def on_spotify?
+    puts "\nIs your album on Spotify (Y/N)?"
+    input = gets.chomp
+    to_cap_letter = input.capitalize
+    to_cap_letter == 'Y'
+  end
+
+  def add_genre
+    puts "\nPlease write the Music Genre you want to add"
+    input = gets.chomp
+    input.capitalize
+    input
+  end
+
+  def select_genre
+    gets.chomp
+  end
 end

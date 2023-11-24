@@ -3,7 +3,7 @@ require_relative '../path_finder'
 module AlbumData
   include PathFinder
 
-  def read_all_albums()
+  def read_all_albums(genres)
     data = read_file(create_path('albums.json'))
     data.map { |album| json_to_album(album, genres.find { |item| album['genre']['id'] == item.id }) }
   end

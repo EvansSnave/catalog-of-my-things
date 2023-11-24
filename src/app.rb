@@ -4,6 +4,7 @@ require_relative 'list_module'
 
 class App
   include AddData
+  attr_accessor :albums, :genres
 
   def initialize
     @labels = read_all_labels
@@ -49,9 +50,9 @@ class App
     label
   end
 
-  def add_album
+  def add_a_music_album
     id = Random.rand(1..10_000)
-    publish_date = @interaction.publish_date('Enter publish date')
+    publish_date = @interaction.add_publish_date
     on_spotify = @interaction.on_spotify?
     genre = select_genre
     album = MusicAlbum.new(id, publish_date, on_spotify: on_spotify)
