@@ -1,6 +1,6 @@
 require './class/book'
 require './class/label'
-require_relative './data_storage'
+require_relative 'data_storage'
 module BookModule
   include DataStorage
 

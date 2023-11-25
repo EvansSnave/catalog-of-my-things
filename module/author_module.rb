@@ -1,4 +1,4 @@
-require_relative './data_storage'
+require_relative 'data_storage'
 require_relative '../class/author'
 
 module GamesAuthor

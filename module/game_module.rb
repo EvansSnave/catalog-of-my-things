@@ -1,6 +1,6 @@
-require_relative './data_storage'
+require_relative 'data_storage'
 require_relative '../class/game'
-require_relative './author_module'
+require_relative 'author_module'
 
 module GameModule
   include DataStorage
