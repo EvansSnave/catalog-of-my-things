@@ -1,4 +1,4 @@
-require_relative '../logic/genre'
+require_relative '../src/logic/genre'
 
 RSpec.describe Genre do
   let(:genre) { Genre.new(1, 'Rock') }
