@@ -5,7 +5,6 @@ class App
   include GameModule
   include DataStorage
 
-
   def initialize
     @games = []
     @authors = []
