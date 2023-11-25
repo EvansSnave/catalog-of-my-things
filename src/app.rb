@@ -4,12 +4,15 @@ require_relative 'list_module'
 
 class App
   include AddData
+  attr_accessor :albums, :genres
 
   def initialize
     @labels = read_all_labels
     @books = read_all_books(@labels)
     @check = Check.new
     @interaction = Interactions.new
+    @genres = read_all_genres
+    @albums = read_all_albums(@genres)
   end
 
   include List
@@ -47,9 +50,49 @@ class App
     label
   end
 
+  def add_a_music_album
+    id = Random.rand(1..10_000)
+    publish_date = @interaction.add_publish_date
+    on_spotify = @interaction.on_spotify?
+    genre = select_genre
+    album = MusicAlbum.new(id, publish_date, on_spotify: on_spotify)
+    album.add_genre(genre)
+    @albums.push(album)
+    puts "\nAlbum created successfully\n"
+  end
+
+  def add_genre
+    id = Random.rand(1..20)
+    name = @interaction.add_genre
+    genre = Genre.new(id, name)
+    @genres.push(genre)
+    genre
+  end
+
+  def select_genre
+    genre = nil
+    option = nil
+    if @genres == []
+      genre = add_genre
+    else
+      puts 'Select a Genre by selecting (index), or press (n) if you need to add a new one'
+      list_genres
+      option = @u_interact.select_genre
+    end
+    if %w[n N].include?(option)
+      genre = add_genre
+    else
+      option = option.to_i
+      genre = @genres[option]
+    end
+    genre
+  end
+
   def quit
     save_books(@books) unless @books.empty?
     save_labels(@labels) unless @labels.empty?
+    save_album(@albums) unless @albums.empty?
+    save_genres(@genres) unless @genres.empty?
     puts 'Thank you for using this app'
     exit
   end
