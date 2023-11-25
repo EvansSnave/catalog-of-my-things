@@ -53,9 +53,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[add_a_book,List_all_books,List_all_labels]**
+- **[List_all_music_albums,List_all_genres,Add_a_music_album]**
+- **[List_of_games,List_all_authors,Add_a_game]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,18 +117,18 @@ To run tests, run the following command:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/Ademola-coding)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/ademola-owoeye)
+- GitHub: [Ademola-coding](https://github.com/Ademola-coding)
+- LinkedIn: [Ademola-owoeye](https://linkedin.com/in/ademola-owoeye)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/gdvl777)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/dvillalba777/)
+- GitHub: [gdvl777](https://github.com/gdvl777)
+- LinkedIn: [dvillalba777](https://linkedin.com/in/dvillalba777)
 
 👤 **Author3**
 
-- GitHub: [@githubhandle](https://github.com/EvansSnave)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/kevin-cruz-25159a201)
+- GitHub: [EvansSnave](https://github.com/EvansSnave)
+- LinkedIn: [kevin-cruz](https://linkedin.com/in/kevin-cruz-25159a201)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
