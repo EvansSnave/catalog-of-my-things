@@ -22,10 +22,7 @@ module GameModule
       list_authors
       puts 'Select author by id'
       id = gets.chomp.to_i
-      load_storage('authors').select 
-      { 
-        |author| author_arr << author if author['id'] == id 
-      }
+      load_storage('authors').select { |author| author_arr << author if author['id'] == id }
     else
       author_arr << add_author
     end
