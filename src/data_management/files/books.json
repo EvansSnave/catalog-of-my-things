@@ -1,0 +1,13 @@
+[
+  {
+    "id": 643,
+    "publish_date": "2001-12-03",
+    "publisher": "kevin",
+    "cover_state": "good",
+    "label": {
+      "id": 437,
+      "title": "we",
+      "color": "red"
+    }
+  }
+]

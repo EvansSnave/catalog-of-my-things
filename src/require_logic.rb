@@ -1,0 +1,6 @@
+require_relative 'logic/book'
+require_relative 'logic/label'
+require_relative 'logic/checking'
+require_relative 'logic/interactions'
+require_relative 'logic/music_album'
+require_relative 'logic/genre'
