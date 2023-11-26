@@ -1,0 +1,13 @@
+CREATE TABLE game (
+    id INTEGER GENERATED ALWAYS AS INDENTITY PRIMARY KEY,
+    last_played_date DATE NOT NULL,
+    multiplayer BOOLEAN NOT NULL,
+    FOREIGN KEY(item_id) REFERENCES items(id)
+);
+
+CREATE TABLE author (
+    id INTEGER GENERATED ALWAYS AS INDENTITY PRIMARY KEY,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255)
+);
+
