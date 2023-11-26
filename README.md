@@ -115,17 +115,17 @@ To run tests, run the following command:
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Author1**
+👤 **Ademola Owoeye**
 
 - GitHub: [Ademola-coding](https://github.com/Ademola-coding)
 - LinkedIn: [Ademola-owoeye](https://linkedin.com/in/ademola-owoeye)
 
-👤 **Author2**
+👤 **Daniel Cruz**
 
 - GitHub: [gdvl777](https://github.com/gdvl777)
 - LinkedIn: [dvillalba777](https://linkedin.com/in/dvillalba777)
-
-👤 **Author3**
+  
+👤 **Kevin German**
 
 - GitHub: [EvansSnave](https://github.com/EvansSnave)
 - LinkedIn: [kevin-cruz](https://linkedin.com/in/kevin-cruz-25159a201)
