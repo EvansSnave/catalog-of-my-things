@@ -1,5 +1,5 @@
-require_relative '../src/logic/music_album'
-require_relative '../src/logic/item'
+require_relative '../logic/music_album'
+require_relative '../logic/item'
 
 RSpec.describe MusicAlbum do
   let(:label) { double('Label', add_item: nil) }

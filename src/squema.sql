@@ -30,3 +30,19 @@ CREATE TABLE books(
   archived BOOLEAN NOT NULL DEFAULT FALSE,
   label_id INT NOT NULL REFERENCES labels (id),
 );
+
+CREATE TABLE Games (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    multiplayer BOOLEAN NOT NULL,
+    last_payed_at DATE NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (item_id) REFERENCES Item(id)
+);
+
+CREATE TABLE Author (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    items INTEGER,
+    PRIMARY KEY (id)
+);
