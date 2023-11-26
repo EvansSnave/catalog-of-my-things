@@ -64,4 +64,33 @@ class Interactions
   def select_genre
     gets.chomp
   end
+
+  def multiplayer
+    loop do
+      puts "\nThe game it is multiplayer (Y)es (N)o"
+      choose = gets.chomp
+      if %w[Y y].include?(choose)
+        return true
+      elsif %w[N n].include?(choose)
+        return false
+      else
+        puts 'Invalid option, try again'
+      end
+    end
+  end
+
+  def name
+    puts "\nEnter author name"
+    gets.chomp
+  end
+
+  def lname
+    puts "\nEnter author last name"
+    gets.chomp
+  end
+
+  def select_author
+    puts 'Select author by the index [not id] or press (n) if you need to add a new one'
+    gets.chomp
+  end
 end

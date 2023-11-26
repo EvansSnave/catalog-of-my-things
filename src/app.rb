@@ -13,6 +13,8 @@ class App
     @interaction = Interactions.new
     @genres = read_all_genres
     @albums = read_all_albums(@genres)
+    @authors = read_all_authors
+    @games = read_games(@authors)
   end
 
   include List
@@ -88,11 +90,44 @@ class App
     genre
   end
 
+  def add_a_game
+    id = Random.rand(2000..10_000)
+    pd = @interaction.add_publish_date
+    mp = @interaction.multiplayer
+    lp = @interaction.add_publish_date
+    if @authors.empty?
+      author = add_author
+    else
+      list_all_authors
+      aut_choose = @interaction.select_author
+      author = if %w[n N].include?(aut_choose)
+                 add_author
+               else
+                 @authors[aut_choose.to_i]
+               end
+    end
+    game = Game.new(id, pd, mp, lp)
+    game.add_author(author)
+    @games << game
+    puts "\nGame created successfully\n"
+  end
+
+  def add_author
+    id = Random.rand(5000..10_000)
+    fn = @interaction.name
+    ln = @interaction.lname
+    author = Author.new(id, fn, ln)
+    @authors << author
+    author
+  end
+
   def quit
     save_books(@books) unless @books.empty?
     save_labels(@labels) unless @labels.empty?
     save_album(@albums) unless @albums.empty?
     save_genres(@genres) unless @genres.empty?
+    save_games(@games) unless @games.empty?
+    save_authors(@authors) unless @authors.empty?
     puts 'Thank you for using this app'
     exit
   end

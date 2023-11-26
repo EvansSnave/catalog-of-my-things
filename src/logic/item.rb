@@ -26,6 +26,13 @@ class Item
     label.add_item(self)
   end
 
+  def add_author(author)
+    @author = author
+    author.add_item(self)
+  end
+
+  def add_source; end
+
   private
 
   def can_be_archived?

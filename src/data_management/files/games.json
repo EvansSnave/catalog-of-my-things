@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": 2663,
+    "publish_date": "2001-12-12",
+    "multiplayer": true,
+    "last_played_at": "2001-12-12",
+    "author": {
+      "id": 5163,
+      "first_name": "we",
+      "last_name": "we"
+    }
+  }
+]

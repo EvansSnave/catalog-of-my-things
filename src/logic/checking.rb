@@ -51,4 +51,33 @@ class Check
       puts "\n #{idx}) ID: (#{genre.id}) Genre: #{genre.name}"
     end
   end
+
+  def check_list_authors(authors)
+    puts "\nAuthors list"
+    if authors.empty?
+      puts "\nNo authors available"
+      return nil
+    end
+    authors.each_with_index do |author, index|
+      puts "\n#{index}) " \
+           "ID: #{author.id}, " \
+           "Name: #{author.first_name}, " \
+           "Last name: #{author.last_name}"
+    end
+  end
+
+  def check_list_games(games)
+    puts "\nGames List"
+    if games.empty?
+      puts "\nNo games available"
+      return nil
+    end
+    games.each_with_index do |game, index|
+      puts "\n#{index}) " \
+           "ID: #{game.id}, " \
+           "Publish date: #{game.publish_date}, " \
+           "Multiplayer: #{game.multiplayer}, " \
+           "Last played: #{game.last_played_at}, "
+    end
+  end
 end
