@@ -1,0 +1,37 @@
+/vendor/bundle/
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database file.
+/db/*.sqlite3
+
+# Ignore the public/uploads directory used for file uploads.
+/public/uploads
+
+# Ignore log files.
+/log/*.log
+
+# Ignore environment-specific settings:
+/config/application.yml
+
+# Ignore cache and temporary files.
+/tmp
+/cache
+
+# Ignore coverage reports.
+/coverage
+
+# Ignore the .byebug_history file.
+/.byebug_history
+
+# Ignore macOS metadata files.
+.DS_Store
+
+# Ignore Windows folder config files.
+Thumbs.db
+ehthumbs.db
+
+# Ignore system and editor files.
+*.swp
+*~
